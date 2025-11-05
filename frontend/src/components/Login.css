@@ -1,0 +1,136 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 2rem;
+  }
+  
+  .login-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    padding: 3rem;
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .login-card h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .login-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+  }
+  
+  .login-form {
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  }
+  
+  .form-group input:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    background: #fee;
+    color: #c33;
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    border-left: 4px solid #e74c3c;
+  }
+  
+  .login-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  }
+  
+  .login-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .test-credentials {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .test-credentials h3 {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .credential-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .credential-item {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .credential-item strong {
+    color: #2c3e50;
+    display: inline-block;
+    min-width: 100px;
+  }
+  
+  @media (max-width: 500px) {
+    .login-card {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
